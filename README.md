@@ -2,8 +2,8 @@
 Tool to display working locations for the last financial year - ATO (Australia)
 
 ## Requirements
-- Python 3.8
-- Python Package Installer (Pip)
+- Python 3
+- PIP3
 
 ## About
 This tool is designed to export the working locations value
