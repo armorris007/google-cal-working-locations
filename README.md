@@ -36,7 +36,7 @@ Install the requirements:
 
 ### 3) Execute the script
 
-        python3 export-working-locations.py
+        python3 export-working-locations-gcal.py
 
 When you execute this, a browser window will launch asking you to login
 to your Google account. You must then click Approve to allow access to 
@@ -46,3 +46,5 @@ Once approved, this tool will output the daily working locations from your
 Calendar between 1st July 2022 and 30th June 2023
 (you can adjust the dates in the code accordingly).
 
+API doco:
+https://developers.google.com/calendar/api/v3/reference/events/list
