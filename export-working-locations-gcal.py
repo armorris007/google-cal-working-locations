@@ -25,7 +25,6 @@ https://developers.google.com/calendar/api/v3/reference/events/list#iCalUID
 
 def main():
     """Shows basic usage of the Google Calendar API.
-    Prints the start and name of the next 10 events on the user's calendar.
     """
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is
@@ -49,7 +48,7 @@ def main():
         # Call the Calendar API
         start = datetime.datetime(2022, 7, 1).isoformat() + 'Z'
         end = datetime.datetime(2023, 6, 30).isoformat() + 'Z'
-        print('Getting the upcoming 10 events')
+        print('Getting a maximum of 366 events')
         events_result = service.events().list(calendarId='primary', timeMin=start, timeMax=end,
                                               maxResults=366, singleEvents=True,eventTypes='workingLocation',
                                               orderBy='startTime').execute()
